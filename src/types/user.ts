@@ -53,8 +53,14 @@ export type User = {
   deleted?: boolean;
   deletedDate?: Date;
   creationIp?: string;
-  customData: any;
+  customData:  customSocialMedia;
   createdAt?: string;
   updatedAt?: string;
   requested?: boolean;
 };
+
+export type customSocialMedia =  {
+  website : string,
+  socialMedia?: { platform: string; url: string }[]; 
+
+  }
