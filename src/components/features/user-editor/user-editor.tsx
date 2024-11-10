@@ -118,7 +118,7 @@ const UserEditor = function ({ params }: { params: { id: string } }) {
               )}
               {isPermissionAllowed("admin:profile:custom-data:write") && (
                 <>
-                  <TypographyH4 className="my-4">Custom Data</TypographyH4>
+                  <TypographyH4 className="my-4">Social Media</TypographyH4>
                   <CustomDataEditor user={user}></CustomDataEditor>
                 </>
               )}
